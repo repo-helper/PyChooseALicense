@@ -7,7 +7,7 @@ name = "PyChooseALicense"
 version = "0.0.0"
 description = "Provides license metadata from choosealicense.com"
 readme = "README.rst"
-keywords = []
+keywords = [ "license",]
 dynamic = [ "requires-python", "classifiers", "dependencies",]
 
 [[project.authors]]
@@ -25,7 +25,11 @@ Homepage = "https://github.com/repo-helper/PyChooseALicense"
 Documentation = "https://pychoosealicense.readthedocs.io/en/latest"
 
 [tool.whey]
-base-classifiers = []
+base-classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
 python-versions = [ "3.6", "3.7", "3.8", "3.9",]
 python-implementations = [ "CPython", "PyPy",]
 platforms = [ "Windows", "macOS", "Linux",]
