@@ -149,7 +149,7 @@ def iter_licenses() -> Iterator[License]:
 	"""
 	Return an iterator over all licenses in the `choosealicense.com`_ database.
 
-	.. versionadded:: 0.2.0
+	.. versionadded:: 0.3.0
 	"""  # noqa: RST306
 
 	traversable: Traversable = importlib_resources.files("pychoosealicense._licenses")
