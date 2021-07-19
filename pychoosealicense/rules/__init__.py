@@ -32,8 +32,8 @@ from typing import Dict, NamedTuple
 
 # 3rd party
 import frontmatter  # type: ignore
+import importlib_resources
 import yaml
-from domdf_python_tools.compat import importlib_resources
 from typing_extensions import TypedDict
 
 __all__ = ["Rule", "RuleMap", "rules"]

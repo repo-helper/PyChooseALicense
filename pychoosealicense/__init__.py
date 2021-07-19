@@ -33,11 +33,12 @@ Provides license metadata from `choosealicense.com`_.
 # stdlib
 import functools
 import re
-from typing import List, NamedTuple, Optional
+from typing import Iterator, List, NamedTuple, Optional
 
 # 3rd party
 import frontmatter  # type: ignore
-from domdf_python_tools.compat import importlib_resources
+import importlib_resources
+from importlib_resources.abc import Traversable
 
 # this package
 from pychoosealicense import rules
@@ -48,7 +49,7 @@ __license__: str = "MIT License"
 __version__: str = "0.1.0"
 __email__: str = "dominic@davis-foster.co.uk"
 
-__all__ = ["License", "get_license"]
+__all__ = ["License", "get_license", "iter_licenses"]
 
 _yaml_handler = frontmatter.YAMLHandler()
 _field_convert_re = re.compile(r"\[(fullname|login|email|project|description|year|projecturl)]")
@@ -142,3 +143,16 @@ def get_license(identifier: str) -> License:
 	metadata["how"] = _field_convert_re.sub(r"{\1}", metadata["how"].translate(_brace_map))
 
 	return License(**metadata, content=content)
+
+
+def iter_licenses() -> Iterator[License]:
+	"""
+	Return an iterator over all licenses in the `choosealicense.com`_ database.
+
+	.. versionadded:: 0.2.0
+	"""  # noqa: RST306
+
+	traversable: Traversable = importlib_resources.files("pychoosealicense._licenses")
+	for license_file in traversable.iterdir():
+		if license_file.name.endswith(".txt"):
+			yield get_license(license_file.name[:-4])

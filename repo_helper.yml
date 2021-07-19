@@ -61,5 +61,8 @@ extras_require:
  cli:
   - consolekit>=1.2.3
   - click>=8.0.1
+ detect:
+  - editdistance-s==1.0.0
 
-tox_testenv_extras: cli
+tox_testenv_extras: all
+preserve_custom_theme: true

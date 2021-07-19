@@ -13,4 +13,8 @@
 
 __all__ = ["extras_require"]
 
-extras_require = {"cli": ["click>=8.0.1", "consolekit>=1.2.3"], "all": ["click>=8.0.1", "consolekit>=1.2.3"]}
+extras_require = {
+		"cli": ["click>=8.0.1", "consolekit>=1.2.3"],
+		"detect": ["editdistance-s==1.0.0"],
+		"all": ["click>=8.0.1", "consolekit>=1.2.3", "editdistance-s==1.0.0"]
+		}
