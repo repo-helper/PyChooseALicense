@@ -56,3 +56,10 @@ keywords:
 
 mypy_deps:
  - types-PyYAML
+
+extras_require:
+ cli:
+  - consolekit>=1.2.3
+  - click>=8.0.1
+
+tox_testenv_extras: cli
