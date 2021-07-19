@@ -1,0 +1,55 @@
+conditions: []
+content: 'Copyright (c) {year} {fullname}
+
+
+  Permission to use, copy, modify, and/or distribute this software for any
+
+  purpose with or without fee is hereby granted.
+
+
+  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+
+  REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+
+  AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+
+  INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+
+  LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+
+  OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+
+  PERFORMANCE OF THIS SOFTWARE.'
+description: The BSD Zero Clause license goes further than the BSD 2-Clause license
+  to allow you unlimited freedom with the software without requirements to include
+  the copyright notice, license text, or disclaimer in either source or binary forms.
+featured: false
+hidden: true
+how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your
+  source code and copy the text of the license into the file.  Replace {year} with
+  the current year and {fullname} with the name (or names) of the copyright holders.
+  You may take the additional step of removing the copyright notice.
+limitations:
+- description: This license includes a limitation of liability.
+  label: Liability
+  tag: liability
+- description: This license explicitly states that it does NOT provide any warranty.
+  label: Warranty
+  tag: warranty
+nickname: null
+note: null
+permissions:
+- description: The licensed material and derivatives may be used for commercial purposes.
+  label: Commercial use
+  tag: commercial-use
+- description: The licensed material may be distributed.
+  label: Distribution
+  tag: distribution
+- description: The licensed material may be modified.
+  label: Modification
+  tag: modifications
+- description: The licensed material may be used and modified in private.
+  label: Private use
+  tag: private-use
+spdx_id: 0BSD
+title: BSD Zero Clause License
