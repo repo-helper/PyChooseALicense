@@ -3,6 +3,9 @@
 #  _cli.py
 """
 Internal CLI helpers.
+
+.. extras-require:: cli
+	:pyproject:
 """
 #
 #  Copyright © 2021 Dominic Davis-Foster <dominic@davis-foster.co.uk>
