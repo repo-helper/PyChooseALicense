@@ -4,7 +4,7 @@ build-backend = "whey"
 
 [project]
 name = "PyChooseALicense"
-version = "0.1.0"
+version = "0.2.0"
 description = "Provides license metadata from choosealicense.com"
 readme = "README.rst"
 keywords = [ "license",]
