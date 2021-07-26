@@ -1,10 +1,8 @@
 Creative Commons Zero v1.0 Universal
 ====================================
 
-The <a href="https://creativec
-ommons.org/publicdomain/zero/1
-.0/">Creative Commons CC0
-Public Domain Dedication</a>
+The Creative Commons CC0
+Public Domain Dedication
 waives copyright interest in a
 work you've created and
 dedicates it to the world-wide

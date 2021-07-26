@@ -37,7 +37,7 @@ import click  # nodep
 from consolekit.terminal_colours import ColourTrilean, Fore, Style, resolve_color_default  # nodep
 
 # this package
-from pychoosealicense import get_license
+from pychoosealicense import description, get_license
 from pychoosealicense.rules import Rule
 
 __all__ = ["CLI"]
@@ -128,7 +128,9 @@ class CLI:
 		self._echo(Style.BRIGHT(self.the_license.title))
 		self._echo(Style.BRIGHT('=' * len(self.the_license.title)))
 		self._echo()
-		self._echo('\n'.join(textwrap.wrap(self.the_license.description, width=self.term_size)))
+
+		the_description = description.as_plaintext(self.the_license.description)
+		self._echo('\n'.join(textwrap.wrap(the_description, width=self.term_size)))
 		self._echo()
 
 	def print_info(self):

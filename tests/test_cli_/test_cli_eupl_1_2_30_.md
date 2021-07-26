@@ -6,12 +6,9 @@ Licence (EUPL) is a copyleft
 free/open source software
 license created on the
 initiative of and approved by
-the European Commission in <a
-href="https://joinup.ec.europa
-.eu/collection/eupl/eupl-text-
-eupl-12">23 official
-languages</a> of the European
-Union.
+the European Commission in 23
+official languages of the
+European Union.
 
 Permissions
 Commercial use
