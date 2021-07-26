@@ -39,6 +39,7 @@ extra_sphinx_extensions:
  - sphinx_toolbox_experimental.html_section
  - sphinx_toolbox_experimental.autosummary_widths
  - sphinx_toolbox_experimental.needspace
+ - sphinx_click
 
 exclude_files:
  - contributing
@@ -57,3 +58,13 @@ keywords:
 
 mypy_deps:
  - types-PyYAML
+
+extras_require:
+ cli:
+  - consolekit>=1.2.3
+  - click>=8.0.1
+
+tox_testenv_extras: cli
+
+console_scripts:
+ - license-info=pychoosealicense.__main__:main [cli]

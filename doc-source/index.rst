@@ -142,6 +142,7 @@ Contents
 
 	api/pychoosealicense
 	api/*
+	cli
 	Source
 
 .. sidebar-links::
