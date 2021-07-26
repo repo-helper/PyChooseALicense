@@ -1,0 +1,13 @@
+html: A permissive license similar to the <a href='https://choosealicense.com/licenses/bsd-2-clause/'>BSD
+  2-Clause License</a>, but with a 3rd clause that prohibits others from using the
+  name of the copyright holder or its contributors to promote derived products without
+  written consent.
+markdown: A permissive license similar to the [BSD 2-Clause License](https://choosealicense.com/licenses/bsd-2-clause/),
+  but with a 3rd clause that prohibits others from using the name of the copyright
+  holder or its contributors to promote derived products without written consent.
+plaintext: A permissive license similar to the BSD 2-Clause License, but with a 3rd
+  clause that prohibits others from using the name of the copyright holder or its
+  contributors to promote derived products without written consent.
+rst: A permissive license similar to the `BSD 2-Clause License <https://choosealicense.com/licenses/bsd-2-clause/>`_,
+  but with a 3rd clause that prohibits others from using the name of the copyright
+  holder or its contributors to promote derived products without written consent.
