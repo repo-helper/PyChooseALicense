@@ -1,6 +1,7 @@
 # stdlib
 import os
 import shutil
+from typing import List
 
 # 3rd party
 import pytest
@@ -11,6 +12,10 @@ from consolekit.testing import CliRunner
 from pychoosealicense.__main__ import main
 
 
+@pytest.mark.parametrize(
+		"extra_args",
+		[pytest.param([], id=''), pytest.param(["--verbose"], id="verbose")],
+		)
 @pytest.mark.parametrize("terminal_width", [30, 80, 120, 200])
 def test_cli(
 		identifier: str,
@@ -18,6 +23,7 @@ def test_cli(
 		cli_runner: CliRunner,
 		advanced_file_regression: AdvancedFileRegressionFixture,
 		monkeypatch,
+		extra_args: List[str]
 		):
 
 	monkeypatch.setattr(
@@ -26,7 +32,7 @@ def test_cli(
 			lambda *args, **kwargs: os.terminal_size((terminal_width, 24)),
 			)
 
-	result = cli_runner.invoke(main, args=[identifier, "--no-colour"])
+	result = cli_runner.invoke(main, args=[identifier, "--no-colour", *extra_args])
 
 	result.check_stdout(advanced_file_regression, extension=".md")
 	assert result.exit_code == 0
