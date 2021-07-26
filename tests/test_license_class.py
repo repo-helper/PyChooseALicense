@@ -17,9 +17,9 @@ def test_license_class():
 			"dom-1.0",
 			description="A license I just made up.",
 			how=how,
-			conditions=[],
-			permissions=[],
-			limitations=[],
+			conditions=(),
+			permissions=(),
+			limitations=(),
 			content=text,
 			hidden=False,
 			nickname="DomLicense",
@@ -30,9 +30,9 @@ def test_license_class():
 	assert l.spdx_id == "dom-1.0"
 	assert l.description == "A license I just made up."
 	assert l.how == how
-	assert l.conditions == []
-	assert l.permissions == []
-	assert l.limitations == []
+	assert l.conditions == ()
+	assert l.permissions == ()
+	assert l.limitations == ()
 	assert l.content == text
 	assert l.featured is False
 	assert l.hidden is False

@@ -16,9 +16,10 @@ use_whey: true
 enable_conda: false
 python_deploy_version: 3.7
 min_coverage: 100
-#docs_fail_on_warning: true
+docs_fail_on_warning: true
 sphinx_html_theme: furo
 mypy_version: "0.910"
+preserve_custom_theme: true
 
 # Versions to run tests for
 python_versions:
