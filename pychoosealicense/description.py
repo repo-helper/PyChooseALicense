@@ -2,7 +2,7 @@
 #
 #  description.py
 """
-Custom string subclass representing a license's description, with additional methods.
+Functions for converting a license's description to HTML, Markdown etc.
 
 .. versionadded:: 0.2.0
 """
