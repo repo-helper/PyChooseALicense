@@ -20,7 +20,7 @@ def test_iter_licenses(advanced_data_regression: AdvancedDataRegressionFixture):
 	assert isinstance(second_license, License)
 	identifiers.add(second_license.spdx_id)
 
-	for license in licenses:
-		identifiers.add(license.spdx_id)
+	for lic in licenses:
+		identifiers.add(lic.spdx_id)
 
 	advanced_data_regression.check(sorted(identifiers))
