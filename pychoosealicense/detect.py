@@ -10,7 +10,7 @@ Functions for detecting licenses from files.
 	:pyproject:
 
 
-The prodecure is roughly as follows:
+The procedure is roughly as follows:
 
 1. Remove copyright line(s).
 2. Normalize whitespace (replace all whitespace with a single space).

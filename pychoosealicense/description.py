@@ -29,17 +29,12 @@ Functions for converting a license's description to HTML, Markdown etc.
 #
 
 # stdlib
-import functools
 import re
-from typing import Match, NamedTuple, Optional, Tuple
+from typing import Match
 from urllib.parse import urlparse, urlunparse
 
 # 3rd party
 import frontmatter  # type: ignore
-from domdf_python_tools.compat import importlib_resources
-
-# this package
-from pychoosealicense import rules
 
 __all__ = ["as_html", "as_markdown", "as_plaintext", "as_rst"]
 
