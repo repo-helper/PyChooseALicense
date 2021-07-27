@@ -33,7 +33,7 @@ Provides license metadata from `choosealicense.com`_.
 # stdlib
 import functools
 import re
-from typing import Iterator, List, NamedTuple, Optional
+from typing import Iterator, NamedTuple, Optional, Tuple
 
 # 3rd party
 import frontmatter  # type: ignore
@@ -46,7 +46,7 @@ from pychoosealicense import rules
 __author__: str = "Dominic Davis-Foster"
 __copyright__: str = "2021 Dominic Davis-Foster"
 __license__: str = "MIT License"
-__version__: str = "0.1.0"
+__version__: str = "0.2.0"
 __email__: str = "dominic@davis-foster.co.uk"
 
 __all__ = ["License", "get_license", "iter_licenses"]
@@ -59,6 +59,11 @@ _brace_map = {ord('{'): "{{", ord('}'): "}}"}
 class License(NamedTuple):
 	"""
 	Represents a license, with its text and associated metadata.
+
+	.. versionchanged:: 0.2.0
+
+		``conditions``, ``permissions`` and ``limitations`` are now :class:`tuples <tuple>`
+		rather than :class:`lists <list>` to maintain immutability of the :class:`~.License` object.
 	"""
 
 	#: The license full name specified by https://spdx.org/licenses/
@@ -74,13 +79,13 @@ class License(NamedTuple):
 	how: str
 
 	#: Bulleted list of required rules.
-	conditions: List["rules.Rule"]
+	conditions: Tuple["rules.Rule", ...]
 
 	#: Bulleted list of permitted rules.
-	permissions: List["rules.Rule"]
+	permissions: Tuple["rules.Rule", ...]
 
 	#: Bulleted list of limited rules.
-	limitations: List["rules.Rule"]
+	limitations: Tuple["rules.Rule", ...]
 
 	#: The text of the license.
 	content: str
@@ -134,9 +139,9 @@ def get_license(identifier: str) -> License:
 	if "redirect_from" in metadata:
 		del metadata["redirect_from"]
 
-	metadata["conditions"] = list(map(rules.rules["conditions"].__getitem__, metadata["conditions"]))
-	metadata["permissions"] = list(map(rules.rules["permissions"].__getitem__, metadata["permissions"]))
-	metadata["limitations"] = list(map(rules.rules["limitations"].__getitem__, metadata["limitations"]))
+	metadata["conditions"] = tuple(map(rules.rules["conditions"].__getitem__, metadata["conditions"]))
+	metadata["permissions"] = tuple(map(rules.rules["permissions"].__getitem__, metadata["permissions"]))
+	metadata["limitations"] = tuple(map(rules.rules["limitations"].__getitem__, metadata["limitations"]))
 
 	# convert fields to curly-brace format strings
 	content = _field_convert_re.sub(r"{\1}", content)

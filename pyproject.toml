@@ -4,7 +4,7 @@ build-backend = "whey"
 
 [project]
 name = "PyChooseALicense"
-version = "0.1.0"
+version = "0.2.0"
 description = "Provides license metadata from choosealicense.com"
 readme = "README.rst"
 keywords = [ "license",]
@@ -23,6 +23,9 @@ Homepage = "https://github.com/repo-helper/PyChooseALicense"
 "Issue Tracker" = "https://github.com/repo-helper/PyChooseALicense/issues"
 "Source Code" = "https://github.com/repo-helper/PyChooseALicense"
 Documentation = "https://pychoosealicense.readthedocs.io/en/latest"
+
+[project.scripts]
+license-info = "pychoosealicense.__main__:main [cli]"
 
 [project.optional-dependencies]
 cli = [ "click>=8.0.1", "consolekit>=1.2.3",]
@@ -73,6 +76,7 @@ extensions = [
     "sphinx_toolbox_experimental.html_section",
     "sphinx_toolbox_experimental.autosummary_widths",
     "sphinx_toolbox_experimental.needspace",
+    "sphinx_click",
 ]
 sphinxemoji_style = "twemoji"
 gitstamp_fmt = "%d %b %Y"

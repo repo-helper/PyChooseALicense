@@ -8,7 +8,7 @@ email: 'dominic@davis-foster.co.uk'
 username: 'repo-helper'
 assignee: 'domdfcoding'
 primary_conda_channel: "domdfcoding"
-version: '0.1.0'
+version: '0.2.0'
 license: 'MIT'
 short_desc: 'Provides license metadata from choosealicense.com'
 
@@ -16,9 +16,10 @@ use_whey: true
 enable_conda: false
 python_deploy_version: 3.7
 min_coverage: 100
-#docs_fail_on_warning: true
+docs_fail_on_warning: true
 sphinx_html_theme: furo
 mypy_version: "0.910"
+preserve_custom_theme: true
 
 # Versions to run tests for
 python_versions:
@@ -38,6 +39,7 @@ extra_sphinx_extensions:
  - sphinx_toolbox_experimental.html_section
  - sphinx_toolbox_experimental.autosummary_widths
  - sphinx_toolbox_experimental.needspace
+ - sphinx_click
 
 exclude_files:
  - contributing
@@ -65,4 +67,6 @@ extras_require:
   - editdistance-s==1.0.0
 
 tox_testenv_extras: all
-preserve_custom_theme: true
+
+console_scripts:
+ - license-info=pychoosealicense.__main__:main [cli]

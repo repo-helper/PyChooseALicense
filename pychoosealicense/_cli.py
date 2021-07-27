@@ -3,6 +3,9 @@
 #  _cli.py
 """
 Internal CLI helpers.
+
+.. extras-require:: cli
+	:pyproject:
 """
 #
 #  Copyright © 2021 Dominic Davis-Foster <dominic@davis-foster.co.uk>
@@ -37,7 +40,7 @@ import click  # nodep
 from consolekit.terminal_colours import ColourTrilean, Fore, Style, resolve_color_default  # nodep
 
 # this package
-from pychoosealicense import get_license
+from pychoosealicense import description, get_license
 from pychoosealicense.rules import Rule
 
 __all__ = ["CLI"]
@@ -74,10 +77,48 @@ class CLI:
 			self._echo(limitation.label)
 		self._echo()
 
-	def print_rule_table(self) -> None:
+	def _verbose_rules(self) -> None:
+		# TODO: handle really narrow terminals (less than longest label)
+		#  Perhaps put description in wrapped paragraph on the next line
+
+		indent = 4
+
+		def print_rule(rule: Rule):
+			label = f"{rule.label} \u2013 "
+			max_desc_width = self.term_size - indent
+			first_line_extra_indent = (len(label) - indent) * ' '
+			wrapped_description = textwrap.wrap(first_line_extra_indent + rule.description, width=max_desc_width)
+			self._echo(f"{label}{wrapped_description[0].lstrip()}")
+			for line in wrapped_description[1:]:
+				self._echo(f"{' ' * indent}{line}")
+
+		self._echo(Fore.GREEN("Permissions"))
+		for permission in self.the_license.permissions:
+			print_rule(permission)
+
+		self._echo()
+
+		self._echo(Fore.BLUE("Conditions"))
+		for condition in self.the_license.conditions:
+			print_rule(condition)
+
+		self._echo()
+
+		self._echo(Fore.RED("Limitations"))
+		for limitation in self.the_license.limitations:
+			print_rule(limitation)
+
+		self._echo()
+
+	def print_rule_table(self, verbose: bool = False) -> None:
 		"""
 		Print a table of the permissions, conditions and limitations associated with the license.
+
+		:param verbose: Whether to show a description of each rule (permission, limitation etc.)
 		"""
+
+		if verbose:
+			return self._verbose_rules()
 
 		data = [
 				self.the_license.permissions,
@@ -128,13 +169,17 @@ class CLI:
 		self._echo(Style.BRIGHT(self.the_license.title))
 		self._echo(Style.BRIGHT('=' * len(self.the_license.title)))
 		self._echo()
-		self._echo('\n'.join(textwrap.wrap(self.the_license.description, width=self.term_size)))
+
+		the_description = description.as_plaintext(self.the_license.description)
+		self._echo('\n'.join(textwrap.wrap(the_description, width=self.term_size)))
 		self._echo()
 
-	def print_info(self):
+	def print_info(self, verbose: bool = False):
 		"""
 		Print information about the license.
+
+		:param verbose: Whether to show a description of each rule (permission, limitation etc.)
 		"""
 
 		self.print_header()
-		self.print_rule_table()
+		self.print_rule_table(verbose=verbose)

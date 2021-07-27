@@ -33,7 +33,7 @@ from typing import TYPE_CHECKING
 # 3rd party
 import click  # nodep
 from consolekit import click_command  # nodep
-from consolekit.options import colour_option  # nodep
+from consolekit.options import colour_option, verbose_option  # nodep
 
 if TYPE_CHECKING:
 	# 3rd party
@@ -42,12 +42,14 @@ if TYPE_CHECKING:
 __all__ = ["main"]
 
 
+@verbose_option(help_text="Show a description of each rule (permission, limitation etc.)")
 @colour_option()
 @click.argument("license")
 @click_command()
 def main(
 		license: str,  # noqa: A002  # pylint: disable=redefined-builtin
 		colour: "ColourTrilean" = None,
+		verbose: bool = False,
 		):
 	"""
 	Show information about the given license.
@@ -57,7 +59,7 @@ def main(
 	from pychoosealicense._cli import CLI
 
 	cli = CLI(license, colour)
-	cli.print_info()
+	cli.print_info(verbose)
 
 
 if __name__ == "__main__":
