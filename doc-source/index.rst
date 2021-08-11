@@ -144,6 +144,7 @@ Contents
 	api/*
 	cli
 	Source
+	license
 
 .. sidebar-links::
 	:caption: Links
