@@ -56,8 +56,8 @@ pychoosealicense
 	:target: https://github.com/repo-helper/PyChooseALicense/actions?query=workflow%3A%22mypy%22
 	:alt: mypy status
 
-.. |requires| image:: https://requires.io/github/repo-helper/PyChooseALicense/requirements.svg?branch=master
-	:target: https://requires.io/github/repo-helper/PyChooseALicense/requirements/?branch=master
+.. |requires| image:: https://dependency-dash.herokuapp.com/github/repo-helper/PyChooseALicense/badge.svg
+	:target: https://dependency-dash.herokuapp.com/github/repo-helper/PyChooseALicense/
 	:alt: Requirements Status
 
 .. |coveralls| image:: https://img.shields.io/coveralls/github/repo-helper/PyChooseALicense/master?logo=coveralls
