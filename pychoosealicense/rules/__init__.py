@@ -31,7 +31,6 @@ import functools
 from typing import Dict, NamedTuple
 
 # 3rd party
-import frontmatter  # type: ignore
 import yaml
 from domdf_python_tools.compat import importlib_resources
 from typing_extensions import TypedDict
