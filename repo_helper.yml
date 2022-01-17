@@ -18,8 +18,8 @@ python_deploy_version: 3.7
 min_coverage: 100
 docs_fail_on_warning: true
 sphinx_html_theme: furo
-mypy_version: "0.910"
 preserve_custom_theme: true
+tox_testenv_extras: cli
 
 # Versions to run tests for
 python_versions:
@@ -64,8 +64,6 @@ extras_require:
  cli:
   - consolekit>=1.2.3
   - click>=8.0.1
-
-tox_testenv_extras: cli
 
 console_scripts:
  - license-info=pychoosealicense.__main__:main [cli]
