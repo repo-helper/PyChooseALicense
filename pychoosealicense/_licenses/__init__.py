@@ -3,15 +3,12 @@ License metadata used by ``pychoosealicense``.
 """
 
 CHOOSEALICENSE_COMMIT_INFO = """
-commit b3b74f9efa7a9d659a99612b40d5825ba8d6e12e
-Merge: 3cfe5cf 4d35b85
+commit 20d853259a9412aa7a0d6f6d9bc0f098f38266d9
 Author: Mike Linksvayer <mlinksva@github.com>
-Date:   Mon Aug 23 11:52:25 2021 -0700
+Date:   Wed Jan 5 17:50:10 2022 -0800
 
-    Merge pull request #833 from Pukimaa/patch-1
-
-    [#804] Dark Mode
+    rubocop suggestions
 """
 
-CHOOSEALICENSE_COMMIT_HASH = "b3b74f9efa7a9d659a99612b40d5825ba8d6e12e"
-CHOOSEALICENSE_COMMIT_SHORTHASH = "b3b74f9"
+CHOOSEALICENSE_COMMIT_HASH = "20d853259a9412aa7a0d6f6d9bc0f098f38266d9"
+CHOOSEALICENSE_COMMIT_SHORTHASH = "20d8532"
