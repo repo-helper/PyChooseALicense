@@ -9,7 +9,7 @@ Author: Mike Linksvayer <mlinksva@github.com>
 Date:   Tue Jul 19 10:24:57 2022 -0700
 
     Merge pull request #1014 from c0nspiracy/patch-1
-    
+
     Fix typo in non-software licenses page
 """
 
