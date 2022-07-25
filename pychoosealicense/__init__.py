@@ -120,7 +120,12 @@ def get_license(identifier: str) -> License:
 	:param identifier:
 	"""
 
-	license_file = f"{identifier.lower()}.txt".replace(' ', '-')
+	lower_identifier = identifier.lower().replace(' ', '-')
+	if lower_identifier.endswith("-only"):
+		# Correct SPDX identifier is e.g. GPL-2.0-only, but the filename is e.g. gpl-2.0.txt
+		lower_identifier = lower_identifier[:-5]
+
+	license_file = f"{lower_identifier}.txt"
 
 	try:
 		content = importlib_resources.read_text("pychoosealicense._licenses", license_file)
