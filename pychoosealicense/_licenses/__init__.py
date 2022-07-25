@@ -3,15 +3,15 @@ License metadata used by ``pychoosealicense``.
 """
 
 CHOOSEALICENSE_COMMIT_INFO = """
-commit 48c1e44d1dff919ca8764d8567b9fce62ec3e7e6
-Merge: 639dac9 242b063
+commit 62dfebe236ac92b5627f4f7cf96650801c5bdb89
+Merge: 695f9ca cf8f0d7
 Author: Mike Linksvayer <mlinksva@github.com>
-Date:   Thu Apr 14 16:53:19 2022 -0700
+Date:   Tue Jul 19 10:24:57 2022 -0700
 
-    Merge pull request #981 from liyishuai/mulan
-
-    mulan: fix wrapping and trim space
+    Merge pull request #1014 from c0nspiracy/patch-1
+    
+    Fix typo in non-software licenses page
 """
 
-CHOOSEALICENSE_COMMIT_HASH = "48c1e44d1dff919ca8764d8567b9fce62ec3e7e6"
-CHOOSEALICENSE_COMMIT_SHORTHASH = "48c1e44"
+CHOOSEALICENSE_COMMIT_HASH = "62dfebe236ac92b5627f4f7cf96650801c5bdb89"
+CHOOSEALICENSE_COMMIT_SHORTHASH = "62dfebe"

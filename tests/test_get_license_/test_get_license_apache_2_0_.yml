@@ -168,9 +168,10 @@ limitations:
   label: Warranty
   tag: warranty
 nickname: null
-note: The Apache Foundation recommends taking the additional step of adding a boilerplate
-  notice to the header of each source file. You can find the notice in the appendix
-  at the very end of the license text.
+note: The Apache Software Foundation <a href="https://apache.org/foundation/license-faq.html#Apply-My-Software">recommends</a>
+  taking the additional step of adding a boilerplate notice to the header of each
+  source file. You can find the notice in the appendix at the very end of the license
+  text.
 permissions:
 - description: The licensed material and derivatives may be used for commercial purposes.
   label: Commercial use
