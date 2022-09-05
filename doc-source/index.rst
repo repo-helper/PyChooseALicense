@@ -58,8 +58,8 @@ pychoosealicense
 		:workflow: mypy
 		:alt: mypy status
 
-	.. |requires| image:: https://dependency-dash.herokuapp.com/github/repo-helper/PyChooseALicense/badge.svg
-		:target: https://dependency-dash.herokuapp.com/github/repo-helper/PyChooseALicense/
+	.. |requires| image:: https://dependency-dash.repo-helper.uk/github/repo-helper/PyChooseALicense/badge.svg
+		:target: https://dependency-dash.repo-helper.uk/github/repo-helper/PyChooseALicense/
 		:alt: Requirements Status
 
 	.. |coveralls| coveralls-shield::
