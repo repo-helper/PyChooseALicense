@@ -38,7 +38,7 @@ limitations:
 - description: This license explicitly states that it does NOT provide any warranty.
   label: Warranty
   tag: warranty
-nickname: null
+nickname: Modified BSD License
 note: null
 permissions:
 - description: The licensed material and derivatives may be used for commercial purposes.
