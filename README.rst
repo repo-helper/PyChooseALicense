@@ -91,7 +91,7 @@ pychoosealicense
 .. |language| image:: https://img.shields.io/github/languages/top/repo-helper/PyChooseALicense
 	:alt: GitHub top language
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/repo-helper/PyChooseALicense/v2022.7.25
+.. |commits-since| image:: https://img.shields.io/github/commits-since/repo-helper/PyChooseALicense/v2023.3.13
 	:target: https://github.com/repo-helper/PyChooseALicense/pulse
 	:alt: GitHub commits since tagged version
 
