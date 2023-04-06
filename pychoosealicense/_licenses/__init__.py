@@ -3,15 +3,15 @@ License metadata used by ``pychoosealicense``.
 """
 
 CHOOSEALICENSE_COMMIT_INFO = """
-commit 0ccd6c5d0ce1c0f68e088ec0c936322e43b2fbfb
-Merge: 2b3259f b62ee46
+commit 6364c98418b689efccdeeb4c2f82eb84c21b6d3c
+Merge: 0ccd6c5 d68908d
 Author: Mike Linksvayer <mlinksva@github.com>
-Date:   Tue Dec 27 17:22:18 2022 -0800
+Date:   Wed Mar 29 15:21:03 2023 -0700
 
-    Merge pull request #1066 from github/bsd-3-nickname
+    Merge pull request #1096 from tomjmech/patch-1
 
-    Add "Modified" nickname to BSD-3-Clause
+    Fix inconsistent quotes in UPL-1.0
 """
 
-CHOOSEALICENSE_COMMIT_HASH = "0ccd6c5d0ce1c0f68e088ec0c936322e43b2fbfb"
-CHOOSEALICENSE_COMMIT_SHORTHASH = "0ccd6c5"
+CHOOSEALICENSE_COMMIT_HASH = "6364c98418b689efccdeeb4c2f82eb84c21b6d3c"
+CHOOSEALICENSE_COMMIT_SHORTHASH = "6364c98"
