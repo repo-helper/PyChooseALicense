@@ -50,7 +50,7 @@ def main(
 		license: str,  # noqa: A002  # pylint: disable=redefined-builtin
 		colour: "ColourTrilean" = None,
 		verbose: bool = False,
-		):
+		) -> None:
 	"""
 	Show information about the given license.
 	"""

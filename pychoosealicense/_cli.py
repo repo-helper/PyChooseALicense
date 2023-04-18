@@ -83,7 +83,7 @@ class CLI:
 
 		indent = 4
 
-		def print_rule(rule: Rule):
+		def print_rule(rule: Rule) -> None:
 			label = f"{rule.label} \u2013 "
 			max_desc_width = self.term_size - indent
 			first_line_extra_indent = (len(label) - indent) * ' '
@@ -126,7 +126,7 @@ class CLI:
 				self.the_license.limitations,
 				]
 
-		def get_rule_length(rule: Rule):
+		def get_rule_length(rule: Rule) -> int:
 			return len(rule.label) + 2
 
 		rule_lengths = (tuple(map(get_rule_length, row)) for row in data)
@@ -161,7 +161,7 @@ class CLI:
 
 		self._echo()
 
-	def print_header(self):
+	def print_header(self) -> None:
 		"""
 		Print a header giving the name of the license and a short description.
 		"""
@@ -174,7 +174,7 @@ class CLI:
 		self._echo('\n'.join(textwrap.wrap(the_description, width=self.term_size)))
 		self._echo()
 
-	def print_info(self, verbose: bool = False):
+	def print_info(self, verbose: bool = False) -> None:
 		"""
 		Print information about the license.
 

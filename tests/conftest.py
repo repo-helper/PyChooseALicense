@@ -44,5 +44,5 @@ pytest_plugins = ("coincidence", "consolekit.testing")
 				pytest.param("unlicense", id="unlicense"),
 				]
 		)
-def identifier(request):
+def identifier(request) -> str:
 	return request.param
