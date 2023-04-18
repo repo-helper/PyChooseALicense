@@ -75,7 +75,6 @@ extensions = [
     "seed_intersphinx_mapping",
     "html_section",
     "sphinx_toolbox_experimental.autosummary_widths",
-    "sphinx_toolbox_experimental.needspace",
     "sphinx_click",
 ]
 sphinxemoji_style = "twemoji"

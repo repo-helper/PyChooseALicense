@@ -38,10 +38,10 @@ python_versions:
 sphinx_conf_epilogue:
  - nitpicky = True
  - autosummary_widths_builders = ["latex"]
+ - needspace_amount = r"5\baselineskip"
 
 extra_sphinx_extensions:
  - sphinx_toolbox_experimental.autosummary_widths
- - sphinx_toolbox_experimental.needspace
  - sphinx_click
 
 exclude_files:
