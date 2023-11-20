@@ -97,7 +97,7 @@ pychoosealicense
 		:alt: GitHub top language
 
 	.. |commits-since| github-shield::
-		:commits-since: v2023.4.25
+		:commits-since: v2023.11.20
 		:alt: GitHub commits since tagged version
 
 	.. |commits-latest| github-shield::
