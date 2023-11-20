@@ -3,15 +3,15 @@ License metadata used by ``pychoosealicense``.
 """
 
 CHOOSEALICENSE_COMMIT_INFO = """
-commit 6364c98418b689efccdeeb4c2f82eb84c21b6d3c
-Merge: 0ccd6c5 d68908d
+commit 005b3dfd323c1e57d0fd0eab7c41b16126f6eb93
+Merge: 080f59b 510b7f2
 Author: Mike Linksvayer <mlinksva@github.com>
-Date:   Wed Mar 29 15:21:03 2023 -0700
+Date:   Mon Oct 30 18:23:18 2023 -0700
 
-    Merge pull request #1096 from tomjmech/patch-1
+    Merge pull request #1162 from vorburger/patch-1
 
-    Fix inconsistent quotes in UPL-1.0
+    Fix Code Search link in CONTRIBUTING
 """
 
-CHOOSEALICENSE_COMMIT_HASH = "6364c98418b689efccdeeb4c2f82eb84c21b6d3c"
-CHOOSEALICENSE_COMMIT_SHORTHASH = "6364c98"
+CHOOSEALICENSE_COMMIT_HASH = "005b3dfd323c1e57d0fd0eab7c41b16126f6eb93"
+CHOOSEALICENSE_COMMIT_SHORTHASH = "005b3df"
