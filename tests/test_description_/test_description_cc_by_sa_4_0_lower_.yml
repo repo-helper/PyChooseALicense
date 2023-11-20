@@ -1,10 +1,10 @@
 html: Similar to <a href='https://choosealicense.com/licenses/cc-by-4.0/'>CC-BY-4.0</a>
-  but requires derivatives be distributed under the same or a similar, <a href='https://creativecommons.org/compatiblelicenses/'>compatible</a>
+  but requires derivatives be distributed under the same or a similar, <a href='https://creativecommons.org/compatiblelicenses'>compatible</a>
   license. Frequently used for media assets and educational materials. A previous
   version is the default license for Wikipedia and other Wikimedia projects. Not recommended
   for software.
 markdown: Similar to [CC-BY-4.0](https://choosealicense.com/licenses/cc-by-4.0/) but
-  requires derivatives be distributed under the same or a similar, [compatible](https://creativecommons.org/compatiblelicenses/)
+  requires derivatives be distributed under the same or a similar, [compatible](https://creativecommons.org/compatiblelicenses)
   license. Frequently used for media assets and educational materials. A previous
   version is the default license for Wikipedia and other Wikimedia projects. Not recommended
   for software.
@@ -13,7 +13,7 @@ plaintext: Similar to CC-BY-4.0 but requires derivatives be distributed under th
   materials. A previous version is the default license for Wikipedia and other Wikimedia
   projects. Not recommended for software.
 rst: Similar to `CC-BY-4.0 <https://choosealicense.com/licenses/cc-by-4.0/>`_ but
-  requires derivatives be distributed under the same or a similar, `compatible <https://creativecommons.org/compatiblelicenses/>`_
+  requires derivatives be distributed under the same or a similar, `compatible <https://creativecommons.org/compatiblelicenses>`_
   license. Frequently used for media assets and educational materials. A previous
   version is the default license for Wikipedia and other Wikimedia projects. Not recommended
   for software.
