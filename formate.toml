@@ -45,4 +45,4 @@ known_third_party = [
     "pyyaml",
     "typing_extensions",
 ]
-known_first_party = "pychoosealicense"
+known_first_party = [ "pychoosealicense",]
