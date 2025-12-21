@@ -77,6 +77,8 @@ def _anchor_replacement_plaintext(match: Match) -> str:
 def as_html(description: str) -> str:
 	"""
 	Returns the description as an HTML string.
+
+	:param description:
 	"""
 
 	return _a_tag_re.sub(_anchor_replacement_html, description)
@@ -85,6 +87,8 @@ def as_html(description: str) -> str:
 def as_rst(description: str) -> str:
 	"""
 	Returns the description as a reStructuredText string.
+
+	:param description:
 	"""
 
 	return _a_tag_re.sub(_anchor_replacement_rst, description)
@@ -93,6 +97,8 @@ def as_rst(description: str) -> str:
 def as_markdown(description: str) -> str:
 	"""
 	Returns the description as a Markdown string.
+
+	:param description:
 	"""
 
 	return _a_tag_re.sub(_anchor_replacement_markdown, description)
@@ -101,6 +107,8 @@ def as_markdown(description: str) -> str:
 def as_plaintext(description: str) -> str:
 	"""
 	Returns the description as a plaintext string.
+
+	:param description:
 	"""
 
 	return _a_tag_re.sub(_anchor_replacement_plaintext, description)

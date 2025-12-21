@@ -46,7 +46,7 @@ __all__ = ["main"]
 @colour_option()
 @click.argument("license")
 @click_command()
-def main(
+def main(  # noqa: PRM002
 		license: str,  # noqa: A002  # pylint: disable=redefined-builtin
 		colour: "ColourTrilean" = None,
 		verbose: bool = False,
