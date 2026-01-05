@@ -27,7 +27,6 @@ CLI entry point.
 #
 
 # stdlib
-import sys
 from typing import TYPE_CHECKING
 
 # 3rd party
@@ -46,7 +45,7 @@ __all__ = ["main"]
 @colour_option()
 @click.argument("license")
 @click_command()
-def main(  # noqa: PRM002
+def main(
 		license: str,  # noqa: A002  # pylint: disable=redefined-builtin
 		colour: "ColourTrilean" = None,
 		verbose: bool = False,
@@ -63,4 +62,4 @@ def main(  # noqa: PRM002
 
 
 if __name__ == "__main__":
-	sys.exit(main())
+	main()

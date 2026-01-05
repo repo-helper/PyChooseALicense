@@ -15,11 +15,11 @@ def test_rule():
 	assert r.label == "My Rule"
 	assert r.description == "This is the description of my rule. Here you can explain the rule in more detail."
 
-	assert r._asdict() == dict(
-			tag="my-rule",
-			label="My Rule",
-			description="This is the description of my rule. Here you can explain the rule in more detail.",
-			)
+	assert r._asdict() == {
+			"tag": "my-rule",
+			"label": "My Rule",
+			"description": "This is the description of my rule. Here you can explain the rule in more detail.",
+			}
 
 
 class TestGetRules:

@@ -23,7 +23,7 @@ def test_cli(
 		cli_runner: CliRunner,
 		advanced_file_regression: AdvancedFileRegressionFixture,
 		monkeypatch,
-		extra_args: List[str]
+		extra_args: List[str],
 		):
 
 	monkeypatch.setattr(

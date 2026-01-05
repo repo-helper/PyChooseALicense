@@ -36,7 +36,7 @@ import re
 from typing import NamedTuple, Optional, Tuple
 
 # 3rd party
-import frontmatter  # type: ignore
+import frontmatter  # type: ignore[import-untyped]
 from domdf_python_tools.compat import importlib_resources
 
 # this package
