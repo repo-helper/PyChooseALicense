@@ -27,20 +27,6 @@ lines_between_types = 0
 use_parentheses = true
 remove_redundant_aliases = true
 default_section = "THIRDPARTY"
-known_third_party = [
-    "coincidence",
-    "coverage",
-    "coverage_pyver_pragma",
-    "domdf_python_tools",
-    "importlib_metadata",
-    "pytest",
-    "pytest_cov",
-    "pytest_randomly",
-    "pytest_timeout",
-    "python_frontmatter",
-    "pyyaml",
-    "typing_extensions",
-]
 known_first_party = [ "pychoosealicense",]
 
 [config]
