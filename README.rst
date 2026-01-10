@@ -103,7 +103,7 @@ pychoosealicense
 	:alt: Maintenance
 
 .. |pypi-downloads| image:: https://img.shields.io/pypi/dm/PyChooseALicense
-	:target: https://pypi.org/project/PyChooseALicense/
+	:target: https://pypistats.org/packages/PyChooseALicense
 	:alt: PyPI - Downloads
 
 .. end shields
