@@ -42,7 +42,7 @@ pytest_plugins = ("coincidence", "consolekit.testing")
 				pytest.param("lgpl-3.0", id="lgpl-3.0_lower"),
 				pytest.param("LGPL 3.0", id="lgpl-3.0_upper"),
 				pytest.param("unlicense", id="unlicense"),
-				]
+				],
 		)
 def identifier(request) -> str:
 	return request.param

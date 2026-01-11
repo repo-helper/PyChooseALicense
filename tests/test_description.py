@@ -42,7 +42,7 @@ from pychoosealicense import description, get_license
 				pytest.param("lgpl-3.0", id="lgpl-3.0_lower"),
 				pytest.param("LGPL 3.0", id="lgpl-3.0_upper"),
 				pytest.param("unlicense", id="unlicense"),
-				]
+				],
 		)
 def test_description(
 		identifier: str,
