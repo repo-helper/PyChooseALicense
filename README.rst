@@ -119,6 +119,6 @@ To install with ``pip``:
 
 .. code-block:: bash
 
-	$ python -m pip install PyChooseALicense
+	$ python -m pip install pychoosealicense
 
 .. end installation

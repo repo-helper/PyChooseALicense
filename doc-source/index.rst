@@ -121,6 +121,7 @@ Installation
 
 .. installation:: PyChooseALicense
 	:pypi:
+	:pypi-name: pychoosealicense
 	:github:
 
 .. end installation
