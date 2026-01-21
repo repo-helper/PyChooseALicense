@@ -7,4 +7,4 @@ License
 .. license-info:: MIT
 
 .. license::
-	:py: PyChooseALicense
+	:py: pychoosealicense

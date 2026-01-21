@@ -3,7 +3,7 @@ requires = [ "whey",]
 build-backend = "whey"
 
 [project]
-name = "PyChooseALicense"
+name = "pychoosealicense"
 version = "2023.11.20"
 description = "Provides license metadata from choosealicense.com"
 readme = "README.rst"
@@ -42,7 +42,6 @@ python-implementations = [ "CPython", "PyPy",]
 platforms = [ "Windows", "macOS", "Linux",]
 license-key = "MIT"
 additional-files = [ "include pychoosealicense/rules/rules.yml", "recursive-include pychoosealicense/_licenses *.txt",]
-package = "pychoosealicense"
 
 [tool.sphinx-pyproject]
 github_username = "repo-helper"
