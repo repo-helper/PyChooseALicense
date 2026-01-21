@@ -69,22 +69,22 @@ pychoosealicense
 		:alt: CodeFactor Grade
 
 	.. |pypi-version| pypi-shield::
-		:project: PyChooseALicense
+		:project: pychoosealicense
 		:version:
 		:alt: PyPI - Package Version
 
 	.. |supported-versions| pypi-shield::
-		:project: PyChooseALicense
+		:project: pychoosealicense
 		:py-versions:
 		:alt: PyPI - Supported Python Versions
 
 	.. |supported-implementations| pypi-shield::
-		:project: PyChooseALicense
+		:project: pychoosealicense
 		:implementations:
 		:alt: PyPI - Supported Implementations
 
 	.. |wheel| pypi-shield::
-		:project: PyChooseALicense
+		:project: pychoosealicense
 		:wheel:
 		:alt: PyPI - Wheel
 
@@ -108,7 +108,7 @@ pychoosealicense
 		:alt: Maintenance
 
 	.. |pypi-downloads| pypi-shield::
-		:project: PyChooseALicense
+		:project: pychoosealicense
 		:downloads: month
 		:alt: PyPI - Downloads
 

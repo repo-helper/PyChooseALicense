@@ -68,20 +68,20 @@ pychoosealicense
 	:target: https://www.codefactor.io/repository/github/repo-helper/PyChooseALicense
 	:alt: CodeFactor Grade
 
-.. |pypi-version| image:: https://img.shields.io/pypi/v/PyChooseALicense
-	:target: https://pypi.org/project/PyChooseALicense/
+.. |pypi-version| image:: https://img.shields.io/pypi/v/pychoosealicense
+	:target: https://pypi.org/project/pychoosealicense/
 	:alt: PyPI - Package Version
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/PyChooseALicense?logo=python&logoColor=white
-	:target: https://pypi.org/project/PyChooseALicense/
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/pychoosealicense?logo=python&logoColor=white
+	:target: https://pypi.org/project/pychoosealicense/
 	:alt: PyPI - Supported Python Versions
 
-.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/PyChooseALicense
-	:target: https://pypi.org/project/PyChooseALicense/
+.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/pychoosealicense
+	:target: https://pypi.org/project/pychoosealicense/
 	:alt: PyPI - Supported Implementations
 
-.. |wheel| image:: https://img.shields.io/pypi/wheel/PyChooseALicense
-	:target: https://pypi.org/project/PyChooseALicense/
+.. |wheel| image:: https://img.shields.io/pypi/wheel/pychoosealicense
+	:target: https://pypi.org/project/pychoosealicense/
 	:alt: PyPI - Wheel
 
 .. |license| image:: https://img.shields.io/github/license/repo-helper/PyChooseALicense
@@ -102,8 +102,8 @@ pychoosealicense
 .. |maintained| image:: https://img.shields.io/maintenance/yes/2026
 	:alt: Maintenance
 
-.. |pypi-downloads| image:: https://img.shields.io/pypi/dm/PyChooseALicense
-	:target: https://pypistats.org/packages/PyChooseALicense
+.. |pypi-downloads| image:: https://img.shields.io/pypi/dm/pychoosealicense
+	:target: https://pypistats.org/packages/pychoosealicense
 	:alt: PyPI - Downloads
 
 .. end shields
